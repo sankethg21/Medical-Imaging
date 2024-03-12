@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Imaging Project Overview</title>
+<style>
+  body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+
+  header nav {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .main-title h1 {
+    font-size: 2.5em;
+    color: #0e76a8;
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  main {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  section h2 {
+    font-size: 1.75em;
+    color: #333;
+    margin: 24px 0 16px;
+  }
+
+  .introduction, .key-features, .data-source, .conclusion {
+    background-color: #ffffff;
+    border-left: 4px solid #0e76a8;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .introduction h2, .key-features h2, .data-source h2, .conclusion h2 {
+    margin-bottom: 15px;
+    color: #0e76a8;
+  }
+
+  .introduction p, .key-features p, .data-source p, .conclusion p,
+  .introduction ul, .key-features ul, .data-source ul, .conclusion ul {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+
+  ul.key-features-list, .data-source-list, .conclusion-list {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  ul.key-features-list li, .data-source-list li, .conclusion-list li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="%230e76a8"/></svg>') no-repeat left center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-indent: -5px; 
+    list-style-position: inside; 
+  }
+
+  footer {
+    background-color: #0e76a8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  footer p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    header nav, main {
+      width: 95%;
+    }
+  }
+
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .team-member {
+    background-color: #e1e1e1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  }
+
+  .team-member h2 {
+    color: #0e76a8;
+    margin-bottom: 8px;
+  }
+
+  .team-member a {
+    color: #0e76a8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .team-member a:hover {
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .team-members {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    
+  </nav>
+</header>
+
+<main>
+  <div class="main-title">
+    <h1>Overview: Medical Imaging</h1>
+  </div>
+  <section class="introduction">
+    <h2>Introduction:</h2>
+    <p>Medical Imaging is a groundbreaking project aimed at revolutionizing the way DICOM images are processed and analyzed. Our mission is to create a user-friendly, web-based platform that seamlessly integrates various automated routines for image processing, including image segmentation, classifiers, and other advanced algorithms. This platform is designed to cater to the needs of medical professionals, researchers, and radiologists by providing them with a powerful tool to enhance diagnostic accuracy and efficiency.</p>
+  </section>
+  
+  <section class="key-features">
+    <h2>Key Features:</h2>
+    <ul class="key-features-list">
+      <li>Web-Based Interface: A convenient and accessible platform that allows users to upload and view DICOM images from anywhere, at any time.</li>
+      <li>Automated Routines: Incorporates a range of modules for automated image processing, enabling users to obtain precise and reliable results.</li>
+      <li>Visual Dashboard: Displays the outcomes of the processing modules in an intuitive and interactive dashboard, facilitating easy interpretation and analysis of the results.</li>
+      <li>Data Archiving: All processed results are systematically stored in a database, ensuring secure and organized record-keeping for future reference.</li>
+    </ul>
+  </section>
+  
+  <section class="data-source">
+    <h2>Data Source:</h2>
+    <p>To kickstart the development of Medical Imaging, we are utilizing an open-source dataset from The Cancer Imaging Archive: Pancreas-CT. This dataset comprises 82 abdominal contrast-enhanced 3D CT scans, including 53 from males and 27 from females. The scans encompass a mix of healthy kidney donors and patients without significant abdominal pathologies, providing a diverse and representative sample for initial testing. Each CT scan is of high quality, with a resolution of 512x512 pixels and slice thicknesses ranging between 1.5 to 2.5 mm.</p>
+  </section>
+  
+  <section class="conclusion">
+    <h2>Conclusion:</h2>
+    <p>Medical Imaging is set to be a game-changer in the field of medical image analysis. By combining advanced processing techniques with a user-friendly interface, we aim to empower healthcare professionals with a tool that enhances diagnostic accuracy and streamlines workflow. Stay tuned for further updates as we continue to develop and refine this innovative platform.</p>
+  </section>
+  
+  <section class="team-members">
+    <h1>Team Members</h1>
+    <div class="team-member">
+      <h2>Head</h2>
+      <p>Thomas Allan, PhD - <a href="mailto:allant@wustl.edu">allant@wustl.edu</a> - Assistant Professor of Radiology - Washington University School of Medicine in St. Louis</p>
+      <p>Abby Stylianou, PhD - <a href="mailto:abby.stylianou@slu.edu">abby.stylianou@slu.edu</a> - Assistant Professor Department of Computer Science - Saint Louis University, St. Louis</p>
+    </div>
+    <div class="team-member">
+      <h2>Assistant</h2>
+      <p>Akhilandeshwari Ramu - Master's Student in Artificial Intelligence - Saint Louis University, St. Louis</p>
+      <p>Sanketh Gonuguntla - Master's Student in Artificial Intelligence - Saint Louis University, St. Louis</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Medical Imaging. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

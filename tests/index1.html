@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Analyzer</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+<style>
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 30px;
+    background-color: #fff;
+    background-image: linear-gradient(45deg, #f9f9f9 25%, transparent 25%, transparent 75%, #f9f9f9 75%, #f9f9f9),
+                      linear-gradient(45deg, #f9f9f9 25%, transparent 25%, transparent 75%, #f9f9f9 75%, #f9f9f9);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+  }
+  h1 {
+    text-align: center;
+    background-color: #007bff;
+    background-image: linear-gradient(to right, #0062cc, #0096ff);
+    color: white;
+    padding: 25px 0;
+    margin-bottom: 25px;
+    border-radius: 12px 12px 0 0;
+    font-size: 1.75em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  ul li:hover {
+    background-color: #e9ecef;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    transform: translateY(-3px) rotate(-1deg);
+  }
+  ul li i {
+    margin-right: 15px;
+    color: #007bff;
+    transition: transform 0.3s ease;
+  }
+  ul li:hover i {
+    transform: scale(1.2) rotate(15deg);
+  }
+  ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    flex-grow: 1;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  .boxed {
+    background-color: #e9ecef;
+    border-radius: 6px;
+    padding: 3px 8px;
+    transition: background-color 0.3s ease;
+  }
+  .boxed:hover {
+    background-color: #d3d9df;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1><i class="fas fa-stethoscope"></i> DWV Tests</h1>
+
+
+  <ul>
+        <li><i class="fas fa-desktop"></i> <a href="./pacs/viewer.html"><span class="boxed">DWV</span></a></li>
+        <li><i class="fas fa-desktop"></i> <a href="./pacs/viewer.html"><span class="boxed">Total Segmentator</span></a></li>
+        <li><i class="fas fa-desktop"></i><a href="./pacs/viewer.html"><span class="boxed">DeepDR</span></a></li>
+  </ul>
+</div>
+
+</body>
+
+</html>

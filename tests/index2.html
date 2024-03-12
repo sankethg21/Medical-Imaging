@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage Layout</title>
+<style>
+  
+  .button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar" id="navbar">
+  Home page
+</div>
+
+<div class="container" id="homepage">
+  <div class="box">
+    Team
+    <button class="button" onclick="routeTo('team.html')">Go to Team</button>
+  </div>
+  <div class="box">
+    Sample Data
+    <button class="button" onclick="routeTo('sample.html')">Go to Sample Data</button>
+  </div>
+  <div class="box">
+    Contact
+    <button class="button" onclick="routeTo('contact.html')">Go to Contact</button>
+  </div>
+  <div class="box">
+    Analyzer
+    <button class="button" onclick="routeTo('/Users/sankethg/Desktop/sample_dwv/index1.html')">Go to Analyzer</button>
+  </div>
+</div>
+
+<script>
+  function routeTo(page) {
+    
+    window.location.href = page;
+  }
+</script>
+
+</body>
+</html>
